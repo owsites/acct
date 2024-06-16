@@ -14,7 +14,6 @@
             background-color: #f0f0f0;
             font-family: Arial, sans-serif;
             overflow: hidden;
-            transition: filter 0.5s ease-in-out;
         }
         .container {
             position: relative;
@@ -28,6 +27,7 @@
         .container img {
             max-width: 100%;
             height: auto;
+            transition: filter 0.5s ease-in-out;
         }
         .overlay {
             position: absolute;
@@ -42,7 +42,7 @@
             display: none;
             z-index: 1000;
         }
-        .blurred {
+        .blurred img {
             filter: blur(5px);
         }
     </style>
@@ -58,7 +58,7 @@
     <script>
         window.addEventListener('load', function() {
             setTimeout(function() {
-                document.body.classList.add('blurred');
+                document.querySelector('.container').classList.add('blurred');
                 document.querySelector('.overlay').style.display = 'block';
             }, 5000);
         });
