@@ -2080,7 +2080,7 @@
                         window.location.href = redirectVal;
                     } else {
                         if (typeof (result) !== 'undefined' && result !== null) {
-                            result = $.parseJSON(result);
+                           
                         }
                         formObj.find('input[type=text],input[type=url],input[type=email],input[type=tel],input[type=password],textarea').each(function () {
                             $(this).val('');
