@@ -1,67 +1,356 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Association of Critical Care Technologists - ACCT India</title>
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-            overflow: hidden;
-        }
-        .container {
-            position: relative;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-        }
-        .container img {
-            max-width: 100%;
-            height: auto;
-            transition: filter 0.5s ease-in-out;
-        }
-        .overlay {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #333;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            display: none;
-            z-index: 1000;
-        }
-        .blurred img {
-            filter: blur(5px);
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <img src="main.png" alt="Large Image">
-        <div class="overlay">
-            <h1>ACCT.ORG.IN</h1>
-            <p>Website Under Construction</p>
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <title>Association of Critical Care Technologists - ACCT India - ACCT.ORG.IN</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta name="description" content="ACCT is the first & only organization for critical care/intensive care technologists in India. Be part of the National ACCT register now.">
+        <!-- favicon icon -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+        <!-- google fonts preconnect -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- style sheets and font icons  -->
+        <link rel="stylesheet" href="css/vendors.min.css"/>
+        <link rel="stylesheet" href="css/icon.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/responsive.css"/>
+        <link rel="stylesheet" href="css/medical.css" />
+    </head>
+    <body data-mobile-nav-style="classic">
+        <div class="box-layout">  
+            <!-- start header -->
+            <header> 
+                <!-- start navigation -->
+                <nav class="navbar navbar-expand-lg header-light bg-white disable-fixed">
+                    <div class="container-fluid">
+                        <div class="col-auto col-lg-2 me-lg-0 me-auto">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="images/acct_main_logo.png" data-at2x="images/acct-logo-white@2x.png" alt="" class="default-logo">
+                                <img src="images/acct_main_logo.png" data-at2x="images/acct-logo-white@2x.png" alt="" class="alt-logo">
+                                <img src="images/acct_main_logo.png" data-at2x="images/acct-logo-white@2x.png" alt="" class="mobile-logo"> 
+                            </a>
+                        </div>
+                        <div class="col-auto col-lg-8 menu-order position-static">
+                            <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-line"></span>
+                                <span class="navbar-toggler-line"></span>
+                                <span class="navbar-toggler-line"></span>
+                                <span class="navbar-toggler-line"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-center" id="navbarNav"> 
+                                <ul class="navbar-nav"> 
+                                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                                    <li class="nav-item"><a href="education.html" class="nav-link">Education</a></li>
+                                    <li class="nav-item"><a href="membership-criteria.html" class="nav-link">Membership</a></li>
+                                    <li class="nav-item"><a href="advocacy.html" class="nav-link">Advocacy</a></li> 
+                                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-auto col-lg-2 text-end d-none d-sm-flex">
+                            <div class="header-icon"> 
+                                <div class="header-button">
+                                    <a href="membership-criteria.html" class="btn btn-small btn-switch-text btn-base-color left-icon btn-round-edge btn-box-shadow">
+                                        <span>
+                                            <span><i class="fa-regular fa-id-card"></i></span>
+                                            <span class="btn-double-text" data-text="Register">Register</span> 
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </nav>
+                <!-- end navigation -->
+            </header>
+            <!-- end header -->
+            <!-- start banner -->
+            <section class="top-space-margin overflow-hidden position-relative p-0 border-radius-10px lg-no-border-radius" data-parallax-background-ratio="0.5" style="background-image: url(images/demo-medical-hero-banner-bg.jpg)">
+                <div class="container h-100">
+                    <div class="row justify-content-md-center">
+                        <div class="col-xxl-5 col-xl-6 col-lg-7 pt-13 xl-pt-6 lg-pb-17 md-pb-6 sm-pt-40px text-center text-lg-start" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                            <span class="fs-19 mb-15px d-block" style="color: #213c51">Association of Critical Care Technologists</span>
+                            <h1 class="text-dark-gray fw-800 xs-fs-65 ls-minus-3px mb-45px d-block">Empowering Critical Care Technology in India</h1>
+                            <a href="membership-criteria.html" class="btn btn-medium btn-switch-text btn-dark-gray btn-round-edge me-15px xs-me-5px">
+                                <span>
+                                    <span class="btn-double-text" data-text="Join ACCT">Join ACCT</span> 
+                                </span>
+                            </a>
+
+                        </div>
+                        <div class="col-xxl-7 col-xl-6 col-lg-5 col-md-10 position-relative align-self-end lg-pb-8 md-pb-1 sm-pb-10 xs-pb-30">
+                            <div class="w-85px h-85px border-radius-100 d-flex align-items-center justify-content-center position-absolute z-index-9 left-50px lg-left-5px sm-left-30px top-100px lg-top-30px mt-30 translate-middle-y" data-anime='{ "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                                <div class="bg-red video-icon-box video-icon-medium feature-box-icon-rounded w-80px h-80px rounded-circle d-flex align-items-center justify-content-center">
+                                    <span>
+                                        <span class="video-icon">
+                                            <i class="bi bi-heart-fill icon-very-medium text-white position-relative top-3px m-0"></i>
+                                            <span class="video-icon-sonar">
+                                                <span class="video-icon-sonar-bfr border border-1 border-color-red"></span>
+                                            </span>
+                                        </span> 
+                                    </span>
+                                </div>
+                            </div>
+
+                            <figure class="outside-box-right-2 position-relative">
+                                <img src="images/1.png" alt="">
+                                <!-- start features box item 
+                                <figcaption class="blur-box bg-white-transparent position-absolute border-radius-6px top-50 right-minus-50px xl-right-minus-5px lg-right-minus-10px sm-right-5px w-250px p-25px text-center last-paragraph-no-margin animation-float">
+                                    
+                                    <div class="icon-with-text-style-08">
+                                        <div class="feature-box feature-box-left-icon-middle overflow-hidden">
+                                            <div class="feature-box-icon me-15px">
+                                                <img src="https://via.placeholder.com/82x106" class="h-50px" alt="">
+                                            </div>
+                                            <div class="feature-box-content last-paragraph-no-margin">
+                                                <span class="d-inline-block fs-17 fw-700 text-dark-gray">Verified doctors</span>
+                                                <p class="lh-20 fs-15">Professional doctor</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                </figcaption>
+                            </figure>
+                               end features box item -->
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-base-color position-absolute bottom-0px w-100 pt-30px pb-30px">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-auto md-mb-10px">
+                                <div class="d-flex align-items-center text-white">
+                                    <i class="bi bi-info-circle icon-very-medium me-10px"></i>
+                                    <span class="fw-600 fs-18">ACCT Updates</span>
+                                    <span class="h-20px w-1px d-none d-lg-block bg-white opacity-5 ms-30px"></span>
+                                </div>
+                            </div>
+                            <div class="col-xl-7 col-lg-8 text-white text-center text-lg-start">
+                                <div class="swiper slider-one-slide" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 20, "loop": true, "pagination": { "el": ".slider-one-slide-pagination", "clickable": true }, "autoplay": { "delay": 2000, "disableOnInteraction": false }, "navigation": { "nextEl": ".swiper-button-next-nav", "prevEl": ".swiper-button-previous-nav" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'>
+                                    <div class="swiper-wrapper align-items-center">
+                                        <!-- start text slider item -->
+                                        <div class="fs-18 swiper-slide">Good standing certificates are now available on request.</div>
+                                        <!-- end text slider item -->
+                                        <!-- start text slider item -->
+                                        <div class="fs-18 swiper-slide">Student membership is open to students only, allied health workers must choose the Associate membership option.</div>
+                                        <!-- end text slider item -->
+                                        <!-- start text slider item -->
+
+                                        <!-- end text slider item -->
+                                    </div>
+                                    <!-- start slider navigation -->
+                                    <!-- <div class="swiper-button-previous-nav swiper-button-prev"><i class="bi bi-arrow-left icon-extra-medium text-dark-gray d-flex"></i></div>
+                                    <div class="swiper-button-next-nav swiper-button-next"><i class="bi bi-arrow-right icon-extra-medium text-dark-gray d-flex"></i></div> -->
+                                    <!-- end slider pagination -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end banner -->   
+            <!-- start section -->
+            <section>
+                <div class="container">
+                    <div class="row align-items-center justify-content-center"> 
+                        <div class="col-lg-6 col-md-10 md-mb-15 xs-mb-20 offset-lg-0 offset-md-1 position-relative"> 
+                            <div class="w-75" data-animation-delay="200" data-shadow-animation="true" data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)">
+                                <img src="images/2.png" alt="" class="border-radius-6px w-100">
+                                <div class="position-absolute left-minus-70px lg-left-minus-15px md-left-minus-50px bottom-130px lg-bottom-90px md-mb-50px d-none d-md-flex flex-column align-items-center justify-content-center w-140px h-140px bg-white border-radius-100 p-10px box-shadow-quadruple-large" data-anime='{"translateY": [-15, 0], "scale": [0.5, 1], "opacity": [0,1], "duration": 800, "delay": 800, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                                    <img src="images/logo_ani_1.png" class="position-absolute top-50 translate-middle-y" alt="">
+                                    <img src="images/logo_ani_2.png" class="animation-rotation" alt="">
+                                </div>
+                            </div>
+                            <div class="w-55 overflow-hidden position-absolute right-15px bottom-minus-50px" data-shadow-animation="true" data-animation-delay="100" data-bottom-top="transform: translateY(-20px)" data-top-bottom="transform: translateY(20px)">
+                                <img src="images/3.png" alt="" class="border-radius-6px box-shadow-quadruple-large w-100" />
+                            </div>
+                        </div> 
+                        <div class="col-xl-5 offset-xl-1 col-lg-6 text-right text-md-start" data-anime='{ "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                            <span class="fs-18 fw-600 text-dark-gray mb-20px d-flex align-items-center"><span class="text-center w-60px h-60px d-flex justify-content-center align-items-center rounded-circle bg-light-sea-green-transparent-light align-middle me-15px"><i class="bi bi-layout-text-sidebar-reverse text-base-color fs-20"></i></span>Who We Are</span>
+                            <h2 class="fw-800 text-dark-gray ls-minus-2px">Welcome to ACCT.</h2> 
+                            <p class="mb-30px w-95 lg-w-100 xs-mb-25px">ACCT is the first and only national organization in India dedicated to supporting and representing critical care/intensive care technologists.</p>     
+                            <p class="mb-30px w-95 lg-w-100 xs-mb-25px">Our members are highly trained professionals who play a crucial role in the management of critically ill patients, working alongside doctors and nurses to ensure optimal patient outcomes.</p> 
+
+                            <div class="d-inline-block mt-40px xs-mt-30px">
+                                <a href="about.html" class="btn btn-medium btn-switch-text btn-dark-gray btn-round-edge me-15px xs-me-5px">
+                                    <span>
+                                        <span class="btn-double-text" data-text="Mission Statement">Mission Statement</span> 
+                                    </span>
+                                </a>
+                                <a href="ACCT-Executive-Committee.html" class="btn btn-medium btn-switch-text left-icon btn-transparent-light-gray border-color-transparent-dark-gray btn-round-edge xs-mt-15px">
+                                    <span>
+                                        <span></span>
+                                        <span class="btn-double-text" data-text="Executive Committee">Executive Committee</span> 
+                                    </span>
+                                </a>
+                            </div>
+                        </div> 
+                    </div> 
+                </div>
+            </section>  
+            <!-- end section -->
+            <!-- start section -->
+            <section class="pt-0 position-relative">
+                <div class="position-absolute top-minus-70px lg-top-minus-50px left-minus-80px lg-left-minus-60px lg-w-300px opacity-1 w-350px z-index-1 d-none d-lg-inline-block"><img src="images/demo-medical-pattern.svg" alt="" data-bottom-top="transform: translateY(-50px)" data-top-bottom="transform: translateY(50px)"></div>
+                <div class="bg-light-turquoise-blue border-radius-8px lg-no-border-radius pt-6 pb-6 md-pt-50px md-pb-50px overflow-hidden position-relative">
+                   
+
+                    <div class="container">
+    <div class="row align-items-center justify-content-between">
+        <div class="col-xl-4 col-lg-5 md-mb-30px" data-anime='{"el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 800, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+            <span class="fs-18 fw-600 text-dark-gray mb-20px d-flex align-items-center">
+                <span class="text-center w-60px h-60px d-flex justify-content-center align-items-center rounded-circle bg-light-sea-green-transparent-light align-middle me-15px">
+                    <i class="bi bi bi-shield-check text-base-color fs-22"></i>
+                </span>
+                Why Study Critical Care Tech?
+            </span>
+            <h2 class="fw-800 text-dark-gray ls-minus-2px">Impactful Career</h2>
+            <p class="mb-30px">Critical care technologists play a vital role in saving lives and improving patient outcomes in ICUs/ERs, providing immense job satisfaction and purpose.</p>
+
+        </div>
+
+       <div class="col-xl-4 col-lg-5 md-mb-30px" data-anime='{"el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 800, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+            <span class="fs-18 fw-600 text-dark-gray mb-20px d-flex align-items-center">
+                <span class="text-center w-60px h-60px d-flex justify-content-center align-items-center rounded-circle bg-light-sea-green-transparent-light align-middle me-15px">
+                    <i class="bi bi bi-shield-check text-base-color fs-22"></i>
+                </span>
+Critical Care / Intensive care Technology
+            </span>
+            <h2 class="fw-800 text-dark-gray ls-minus-2px">Cutting-Edge Knowledge</h2>
+            <p class="mb-30px">This career offers the opportunity to work with advanced medical technologies (Mechanical Ventilators, Airway devices, ECMO) and stay at the forefront of healthcare innovations.</p>
+
+        </div>
+        <div class="col-xl-4 col-lg-5 md-mb-30px" data-anime='{"el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 800, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+            <span class="fs-18 fw-600 text-dark-gray mb-20px d-flex align-items-center">
+                <span class="text-center w-60px h-60px d-flex justify-content-center align-items-center rounded-circle bg-light-sea-green-transparent-light align-middle me-15px">
+                    <i class="bi bi bi-shield-check text-base-color fs-22"></i>
+                </span>
+Dip., BSc. & MSc. available
+            </span>
+            <h2 class="fw-800 text-dark-gray ls-minus-2px">Scope for Future</h2>
+            <p class="mb-30px">With the growth of critical care and ICU infrastructure in India, critical care technologists will be in high demand, offering strong job security and competitive salaries.</p>
+
         </div>
     </div>
-    <script>
-        window.addEventListener('load', function() {
-            setTimeout(function() {
-                document.querySelector('.container').classList.add('blurred');
-                document.querySelector('.overlay').style.display = 'block';
-            }, 5000);
-        });
-    </script>
-</body>
+
+    <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 mt-5 align-items-center justify-content-center" data-anime='{"el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 800, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'>
+    </div>
+</div>
+
+                </div>
+            </section>
+            <!-- end section -->
+            <!-- start section -->
+            <section class="overlap-height py-0">
+                <div class="container overlap-gap-section">
+                    <div class="row align-items-center justify-content-center"> 
+    
+                        <div class="col-xl-8 offset-xl-1 col-lg-6" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 1200, "delay": 150, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                            <span class="fs-18 fw-600 text-dark-gray mb-20px d-flex align-items-center"><span class="text-center w-60px h-60px d-flex justify-content-center align-items-center rounded-circle bg-light-sea-green-transparent-light align-middle me-15px"><i class="bi bi-layout-text-sidebar-reverse text-base-color fs-20"></i></span>Why Join ACCT?</span> 
+                            <h2 class="fw-800 text-dark-gray ls-minus-2px">Accreditation & Registration</h2> 
+                            <b>Become a Licensed Critical Care Technologist</b><br>
+                            <p class="mb-35px md-mb-30px w-90 lg-w-100">We have launched the national registry for critical care/intensive care technologists in India. Every registered member is provided an authenticated <b>membership certificate</b> and <b>ID Card.</b> We also certify and provide <b>Good standing certificates</b> for your job applications in India and abroad with online verification service.</p> 
+                                <span>
+                                                     <a href="membership-criteria.html" class="btn btn-medium btn-switch-text btn-dark-gray btn-round-edge me-15px xs-me-5px">
+                                    <span>
+                                        <span class="btn-double-text" data-text="Get Registered">Get Registered</span> 
+                                    </span>
+                                </a>
+                                </span>
+                        </div>  
+                    </div>
+  
+                </div>
+            </section>
+            <!-- end section --> 
+            <!-- start section --> 
+  
+  
+                    <div class="row justify-content-center align-items-center mt-5 sm-mt-7" data-anime='{ "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                        <div class="col-12 text-center last-paragraph-no-margin">
+                            <div class="fs-12 lh-30 fw-600 text-white text-uppercase d-inline-block bg-base-color border-radius-30px ps-20px pe-20px me-10px sm-m-5px align-middle">ACCT.ORG.IN</div> 
+                            <div class="d-inline-block align-middle text-dark-gray fs-20 fw-600 ls-minus-05px">Championing the Future of Critical Care Technology</div>
+                        </div>
+                    </div>
+                </div>
+                <br> <br>
+                <div class="position-absolute top-10px right-minus-80px xl-right-minus-40px lg-right-15px opacity-1 w-350px z-index-minus-1"><img src="images/demo-medical-pattern.svg" alt="" data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)"></div>
+
+            <!-- end section -->
+            
+            <!-- start footer -->
+            <footer class="p-0">
+                <div class="footer-top bg-dark-gray pt-35px pb-35px border-radius-6px lg-no-border-radius position-relative overflow-hidden">
+                    <div class="position-absolute right-minus-100px bottom-minus-80px margin-100px-top opacity-1 w-250px"><img src="images/demo-medical-pattern-white.svg" alt="" class=""></div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <!-- start footer column -->
+                            <div class="col-xl-3 col-sm-6 order-1 text-center text-sm-start xs-mb-20px">
+                                <a href="index.html" class="footer-logo d-inline-block"><img src="images/acct_footer_logo.png" data-at2x="images/acct_footer_logo.png" alt=""></a>
+                            </div>
+                            <!-- end footer column -->
+                            <!-- start footer column -->
+                            <div class="col-xl-6 order-3 order-xl-2 lg-mt-10px">
+                                <ul class="footer-navbar text-center lh-normal">  
+                                   <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                                    <li class="nav-item"><a href="education.html" class="nav-link">Education</a></li>
+                                    <li class="nav-item"><a href="membership-criteria.html" class="nav-link">Membership</a></li>
+                                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                                </ul>
+                            </div>
+                            <!-- end footer column -->
+                            <!-- start footer column -->
+                            <div class="col-xl-3 col-sm-6 position-relative text-center text-sm-end elements-social social-icon-style-08 order-2 order-xl-3">
+                                <ul class="small-icon light">
+                                    <li><a class="linkedin" href="https://www.linkedin.com/company/acct-india/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                                   
+                                </ul>
+                            </div>
+                            <!-- end footer column -->
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-md-2 align-items-center pt-30px pb-30px">
+                        <!-- start copyright -->
+                        <div class="col last-paragraph-no-margin fs-15 text-center text-md-start sm-mb-10px">
+                            <p>&copy; 2024 Association of Critical Care Technologists, India </p>
+                        </div>
+                        <!-- end copyright -->
+                        <!-- start footer menu -->
+                                              <div class="col text-end fs-15 text-center text-md-end">
+                            <ul class="footer-navbar lh-normal"> 
+                                <li class="me-35px sm-me-20px"><a href="terms.html">Terms and conditions</a></li>
+                                <li><a href="privacy.html">Privacy policy</a></li>
+                            </ul>
+                        </div>
+                        <!-- end footer menu -->
+                    </div>
+                </div>        
+            </footer>
+            <!-- end footer -->
+            <!-- start sticky column -->
+            <div class="sticky-wrap d-none d-xl-inline-block" data-animation-delay="100" data-shadow-animation="true">
+                <span class="fs-15 fw-500 d-flex align-items-center"><i class="bi bi-envelope icon-small me-10px align-middle"></i>We are available for your queries — <a href="contact.html" class="text-decoration-line-bottom fw-700 lh-22">Contact</a></span>
+            </div>
+            <!-- end sticky column -->
+        </div>
+        <!-- start scroll progress -->
+        <div class="scroll-progress d-none d-xxl-block">
+            <a href="#" class="scroll-top" aria-label="scroll">
+                <span class="scroll-text">Scroll</span><span class="scroll-line"><span class="scroll-point"></span></span>
+            </a>
+        </div>
+        <!-- end scroll progress -->
+        <!-- javascript libraries -->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/vendors.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
 </html>
