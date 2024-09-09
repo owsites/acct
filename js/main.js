@@ -2014,43 +2014,6 @@
      Contact form validation
      ====================================== */
 
-    // Contact form validation on submit
-    $(document).on('click', '.submit', function () {
-        var error = false,
-                _this = $(this),
-                formObj = _this.parents('form'),
-                emailFormat = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/,
-                urlformat = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/,
-                telFormat = /[0-9 -()+]+$/,
-                actionURL = formObj.attr('action'),
-                resultsObj = formObj.find('.form-results'),
-                grecaptchav3= _this.attr( 'data-sitekey' ) || '',
-                redirectVal = formObj.find('[name="redirect"]').val();
-        formObj.find('.required').removeClass('is-invalid');
-        formObj.find('.required').each(function () {
-            var __this = $(this),
-                    fieldVal = __this.val();
-            if (fieldVal == '' || fieldVal == undefined) {
-                error = true;
-                __this.addClass('is-invalid');
-            } else if (__this.attr('type') == 'email' && !emailFormat.test(fieldVal)) {
-                error = true;
-                __this.addClass('is-invalid');
-            } else if (__this.attr('type') == 'url' && !urlformat.test(fieldVal)) {
-                error = true;
-                __this.addClass('is-invalid');
-            } else if (__this.attr('type') == 'tel' && !telFormat.test(fieldVal)) {
-                error = true;
-                __this.addClass('is-invalid');
-            }
-        });
-        var termsObj = formObj.find('.terms-condition');
-        if (termsObj.length) {
-            if (!termsObj.is(':checked')) {
-                error = true;
-                termsObj.addClass('is-invalid');
-            }
-        }
 
         // Google reCaptcha verify
         if ( typeof ( grecaptcha ) !== 'undefined' && grecaptcha !== null ) {
