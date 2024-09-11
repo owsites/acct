@@ -1,4 +1,5 @@
-﻿<html lang="en">
+<!Doctype html>
+<html lang="en">
     <head>
         <title>Membership Application Portal- Association of Critical Care Technologists - ACCT India - ACCT.ORG.IN</title>
         <meta charset="utf-8">
@@ -106,7 +107,6 @@
                     <form id="form" action="https://submit-form.com/9LsHAVAEO" method="post" class="row contact-form-style-02">
                          <input type="hidden" name="_redirect" value="https://acct.org.in/acknowledgement.html" />
                          <input type="hidden" name="_append" value="false" />
-                         
 
                         <!-- Salutation -->
                         <div class="col-md-6 mb-30px">
@@ -180,6 +180,17 @@
                             <hr>
                         </div>
 
+                     <!-- Membership Type -->
+                        <div class="col-md-12 mb-30px">
+                            <small><strong>Choose Your Membership Type</strong></small>
+                            <select class="form-control border-radius-4px border-color-white box-shadow-double-large" name="membershipType" required>
+                                <option value="Life Membership">Registered Lifetime Membership</option>
+                                <option value="Student Membership">Student Membership</option>
+                                <option value="Associate Membership">Associate (International Candidates Only)</option>
+                            </select>
+                        </div>
+
+
                         <!-- Academic Qualification -->
                         <div class="col-12">
                             <h4>Academic Qualification</h4>
@@ -198,24 +209,31 @@
 
                         <!-- Optional Masters Degree -->
                         <div class="col-md-12 mb-30px">
-                            <input class="border-radius-4px border-color-white box-shadow-double-large form-control" type="text" name="masters_degree" placeholder="Masters Degree (Optional)" />
+                            <input class="border-radius-4px border-color-white box-shadow-double-large form-control" type="text" name="masters_degree" placeholder="Masters Degree if any (Optional)" />
                         </div>
 
                         <!-- Institution -->
                         <div class="col-md-12 mb-30px">
-                            <input class="border-radius-4px border-color-white box-shadow-double-large form-control required" type="text" name="institution" placeholder="Institution*" />
+                            <input class="border-radius-4px border-color-white box-shadow-double-large form-control required" type="text" name="institution" placeholder="Institution* (Your University/College)" />
+                        </div>
+
+                         <!-- Degree/Diploma Upload -->
+                        <div class="col-md-12 mb-30px">
+                            <label>Passport Size Photo</label>
+                            <small style="color: red;"> (Note: This Photo will be used for your ID Card.)</small>
+                            <input type="hidden" role="uploadcare-uploader" data-public-key="324623f474f0ceac8357" name="photo_upload" />
                         </div>
 
                         <!-- Degree/Diploma Upload -->
                         <div class="col-md-12 mb-30px">
                             <label>Upload Degree/Diploma Certificate (If student, attach a copy of your student ID card)</label>
-                            <input type="hidden" role="uploadcare-uploader" data-public-key="324623f474f0ceac8357" name="degree_diploma_upload" required />
+                            <input type="hidden" role="uploadcare-uploader" data-public-key="324623f474f0ceac8357" name="degree_diploma_upload" />
                         </div>
 
                         <!-- ID Document Upload -->
                         <div class="col-md-12 mb-30px">
                             <label>Upload Identification Document (Aadhar, Passport, Driving License, PAN Card, Post Office ID card)</label>
-                            <input type="hidden" role="uploadcare-uploader" data-public-key="324623f474f0ceac8357" name="id_document_upload" required />
+                            <input type="hidden" role="uploadcare-uploader" data-public-key="324623f474f0ceac8357" name="id_document_upload" />
                         </div>
 
                         <!-- Divider -->
@@ -225,12 +243,12 @@
 
                         <!-- Current Workplace -->
                         <div class="col-12">
-                            <h4>Current Workplace (Not For Student Membership)</h4>
+                            <h4>Current Workplace <small>(Not For Student Membership)</small></h4>
                         </div>
 
                         <!-- Workplace/Institution Name -->
                         <div class="col-md-12 mb-30px">
-                            <input class="border-radius-4px border-color-white box-shadow-double-large form-control" type="text" name="workplace" placeholder="Current Workplace/Institution Name" required />
+                            <input class="border-radius-4px border-color-white box-shadow-double-large form-control" type="text" name="workplace" placeholder="Current Workplace/Hospital Name" required />
                         </div>
 
                         <!-- Designation/Title -->
@@ -348,35 +366,17 @@
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/vendors.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript">
-/*
-$(document).ready(function() {
-    $("#form").submit(function(event) {
-        event.preventDefault(); // Prevent the form from submitting via the browser.
         
-        $.ajax({
-            url: 'https://submit-form.com/pIseY2ES9',
-            method: 'POST',
-            data: $(this).serialize(),
-            success: function(data, textStatus, jqXHR) {
-                var contentType = jqXHR.getResponseHeader("content-type") || "";
-                if (contentType.indexOf("application/json") >= 0) {
-                    // Handle JSON response
-                    console.log('JSON Response:', data);
-                    // Process JSON data
-                } else {
-                    // Handle HTML response
-                    console.warn('Expected JSON but received HTML:', data);
-                    // Process HTML data
-                }
-            },
-            error: function(jqXHR, textStatus, errorThrown) {
-                console.error('Error:', textStatus, errorThrown);
-            }
-        });
-    });
-});
-*/ 
+<script type="text/javascript">
+  document.getElementById('form').addEventListener('submit', function (event) {
+    var uploader = uploadcare.Widget('[role=uploadcare-uploader]');
+    var file = uploader.value(); // Check if a file is uploaded
+
+    if (!file) {
+      event.preventDefault(); // Stop form submission
+      alert('Please upload a file before submitting.');
+    }
+  });
 </script>
-    </body>
+</body>
 </html>
