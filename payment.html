@@ -23,6 +23,28 @@
         <link rel="stylesheet" href="css/medical.css" />
         <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
         <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+        <style>
+
+        .qrcontainer {
+            max-width: 600px;
+            margin: auto;
+        }
+        .qr-code {
+            width: 100%; /* Make image responsive */
+            max-width: 300px; /* Maximum size of the QR code image */
+            margin: 20px auto; /* Center the image */
+        }
+        @media (max-width: 768px) {
+            /* Adjustments for smaller screens */
+            .qrcontainer {
+                padding: 0 15px;
+            }
+            .qr-code {
+                max-width: 80%; /* Larger percentage for smaller screens */
+            }
+        }
+
+    </style>
     </head>
     <body data-mobile-nav-style="classic">
         <div class="box-layout">  
@@ -87,180 +109,72 @@
         <div class="container" data-anime='{ "el": "childs", "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
             <div class="row mb-3">
                 <div class="col text-center">
-                    <h2 class="fw-800 text-dark-gray ls-minus-2px">ACCT Membership Form</h2>
+                    <h2 class="fw-800 text-dark-gray ls-minus-2px">Membership Fee</h2>
                 </div>
             </div>
 
             <div class="row mb-3">
                 <div class="col text-center">
-                    <p class="">Life Membership (Rs. 1256/-)<br>Student Membership (Rs. 960/-)<br>
-                    All members recieve an official ACCT ID Card and Membership certificate sent to their address provided.</p>   
+                    <h6 style="color: black">Kindly make fee payment using the QR code <br>below and <span style="color: darkmagenta;">please upload below the screenshot of payment.</span></h6>
+                    <p style="color:black"><strong>Registered Lifetime Membership (Rs. 1256/-)</strong><br>Student Membership (Rs. 960/-)<br>  
                  <hr>
                 </div>
             </div>
-
-       
+   
 
             <div class="row align-items-center justify-content-center position-relative z-index-1">
                 <div class="col-lg-10">
                     <!-- ----------------- start contact form ------------------ -->
-                    <form id="form" action="https://submit-form.com/9LsHAVAEO" method="post" class="row contact-form-style-02">
-                         <input type="hidden" name="_redirect" value="https://acct.org.in/payment.html" />
+                    <form id="form" action="https://submit-form.com/f8HgUiMJf" method="post" class="row contact-form-style-02">
+                         <input type="hidden" name="_redirect" value="https://acct.org.in/acknowledgement.html" />
                          <input type="hidden" name="_append" value="false" />
 
-                        <!-- Salutation -->
-                        <div class="col-md-6 mb-30px">
-                            <select class="form-control border-radius-4px border-color-white box-shadow-double-large" name="salutation">
-                                <option value="Mr.">Mr.</option>
-                                <option value="Ms.">Ms.</option>
-                                <option value="Mrs.">Mrs.</option>
-                                <option value="Dr.">Dr.</option>
-                            </select>
-                        </div>
+<div class="qrcontainer text-center">
+   <img src="images/09265428126.jpg" alt="qr-code" class="qr-code"></a>
 
-                        <!-- First Name -->
-                        <div class="col-md-6 mb-30px">
-                            <input class="input-name border-radius-4px border-color-white box-shadow-double-large form-control required" type="text" name="first_name" placeholder="First Name*" />
-                        </div>
+<a href="upi://pay?pa=9544320625@okbizaxis&pn=Qatalyst"><p> 9544320625@okbizaxis</p></a>
+ 
 
-                        <!-- Last Name -->
-                        <div class="col-md-6 mb-30px">
-                            <input class="input-name border-radius-4px border-color-white box-shadow-double-large form-control required" type="text" name="last_name" placeholder="Last Name*" />
-                        </div>
+</div>
 
-                        <!-- Email -->
-                        <div class="col-md-6 mb-30px">
-                            <input class="border-radius-4px border-color-white box-shadow-double-large form-control required" type="email" name="email" placeholder="Email*" />
-                        </div>
 
-                        <!-- Gender Identity -->
-                        <div class="col-md-6 mb-30px">
-                            <select class="form-control border-radius-4px border-color-white box-shadow-double-large" name="gender_identity">
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                                <option value="TransMale">TransMale</option>
-                                <option value="TransFemale">TransFemale</option>
-                                <option value="GenderQueer">Gender Queer / Gender Non-conforming</option>
-                                <option value="Decline">Decline to answer</option>
-                            </select>
-                        </div>
 
-                        <!-- Phone Number -->
-                        <div class="col-md-6 mb-30px">
-                            <input class="border-radius-4px border-color-white box-shadow-double-large form-control required" type="text" name="phone" placeholder="Phone Number*" required pattern="\d{10}"/>
-                            <small>Your phone number is kept strictly private and shall only be used for communicating important information from ACCT.</small>
-                        </div>
-
-                        <!-- Address -->
-                        <div class="col-md-12 mb-30px">
-                            <input class="border-radius-4px border-color-white box-shadow-double-large form-control required" type="text" name="apartment" placeholder="Apartment/Flat/House Name (To send ID Card and Membership Certificate)" />
-                        </div>
-                        <div class="col-md-6 mb-30px">
-                            <input class="border-radius-4px border-color-white box-shadow-double-large form-control required" type="text" name="address_line_1" placeholder="Address Line 1*" />
-                        </div>
-                        <div class="col-md-6 mb-30px">
-                            <input class="border-radius-4px border-color-white box-shadow-double-large form-control" type="text" name="address_line_2" placeholder="Address Line 2 (Optional)" />
-                        </div>
-                        <div class="col-md-6 mb-30px">
-                            <input class="border-radius-4px border-color-white box-shadow-double-large form-control required" type="text" name="city" placeholder="Town/City*" />
-                        </div>
-                        <div class="col-md-6 mb-30px">
-                            <input class="border-radius-4px border-color-white box-shadow-double-large form-control required" type="text" name="state" placeholder="State*" />
-                        </div>
-                        <div class="col-md-6 mb-30px">
-                            <select class="form-control border-radius-4px border-color-white box-shadow-double-large" name="country">
-                                <option value="India" selected>India</option>
-                                <option disabled>──────────</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
 
                         <!-- Divider -->
                         <div class="col-12">
                             <hr>
                         </div>
 
-                     <!-- Membership Type -->
-                        <div class="col-md-12 mb-30px">
-                            <small><strong>Choose Your Membership Type</strong></small>
-                            <select class="form-control border-radius-4px border-color-white box-shadow-double-large" name="membershipType" required>
-                                <option value="Life Membership">Registered Lifetime Membership</option>
-                                <option value="Student Membership">Student Membership</option>
-                                <option value="Associate Membership">Associate (International Candidates Only)</option>
-                            </select>
-                        </div>
 
-
-                        <!-- Academic Qualification -->
+                        <!-- Payment Verification -->
                         <div class="col-12">
-                            <h4>Academic Qualification</h4>
-                        </div>
-
-                        <!-- Degree/Diploma -->
+                            <strong style="color:darkred;">After Payment is Complete, Kindly Verify via:<br><br></strong>
+                            <strong>1. Upload UPI Screenshot here</strong>
+                                 <!-- UPI ScreenShot Upload -->
                         <div class="col-md-12 mb-30px">
-                            <select class="form-control border-radius-4px border-color-white box-shadow-double-large" name="degree">
-                                <option value="Bsc Critical Care Technology">Bsc Critical Care Technology or Intensive Care Technology</option>
-                                <option value="Diploma Critical Care Technology">Diploma in Critical Care Technology or Intensive Care Technology</option>
-                                <option value="BSc Critical Care Emergency">BSc in Critical Care and Emergency Medicine Technology</option>
-                                <option disabled>──────────</option>
-                                <option value="Currently Studying">Currently Studying</option>
-                            </select>
+                            <label style="color: red;">UPI Screenshot</label>
+                            <input type="hidden" role="uploadcare-uploader" data-public-key="324623f474f0ceac8357" name="paymentScreenshot" />
+                        </div>
+                        <br>
+                            <strong style="color:red">OR, you may:</strong>
+                        <br><br>
+                            <strong>2. Enter UPI Reference Number</strong>
+                            <!-- Or Payment Referece Number -->
+                             <div class="col-md-12 mb-30px">
+                            <input class="border-radius-4px border-color-white box-shadow-double-large form-control required" type="text" name="referenceNo" placeholder="Enter Payment Reference No. here" />
+                            </div>
                         </div>
 
-                        <!-- Optional Masters Degree -->
-                        <div class="col-md-12 mb-30px">
-                            <input class="border-radius-4px border-color-white box-shadow-double-large form-control" type="text" name="masters_degree" placeholder="Masters Degree if any (Optional)" />
-                        </div>
+                    
 
-                        <!-- Institution -->
-                        <div class="col-md-12 mb-30px">
-                            <input class="border-radius-4px border-color-white box-shadow-double-large form-control required" type="text" name="institution" placeholder="Institution* (Your University/College)" />
-                        </div>
 
-                         <!-- Degree/Diploma Upload -->
-                        <div class="col-md-12 mb-30px">
-                            <label>Passport Size Photo</label>
-                            <small style="color: red;"> (Note: This Photo will be used for your ID Card.)</small>
-                            <input type="hidden" role="uploadcare-uploader" data-public-key="324623f474f0ceac8357" name="photo_upload" />
-                        </div>
-
-                        <!-- Degree/Diploma Upload -->
-                        <div class="col-md-12 mb-30px">
-                            <label>Upload Degree/Diploma Certificate (If student, attach a copy of your student ID card)</label>
-                            <input type="hidden" role="uploadcare-uploader" data-public-key="324623f474f0ceac8357" name="degree_diploma_upload" />
-                        </div>
-
-                        <!-- ID Document Upload -->
-                        <div class="col-md-12 mb-30px">
-                            <label>Upload Identification Document (Aadhar, Passport, Driving License, PAN Card, Post Office ID card)</label>
-                            <input type="hidden" role="uploadcare-uploader" data-public-key="324623f474f0ceac8357" name="id_document_upload" />
-                        </div>
-
-                        <!-- Divider -->
-                        <div class="col-12">
-                            <hr>
-                        </div>
-
-                        <!-- Current Workplace -->
-                        <div class="col-12">
-                            <h4>Current Workplace <small>(Not For Student Membership)</small></h4>
-                        </div>
-
-                        <!-- Workplace/Institution Name -->
-                        <div class="col-md-12 mb-30px">
-                            <input class="border-radius-4px border-color-white box-shadow-double-large form-control" type="text" name="workplace" placeholder="Current Workplace/Hospital Name" required />
-                        </div>
-
-                        <!-- Designation/Title -->
-                        <div class="col-md-12 mb-30px">
-                            <input class="border-radius-4px border-color-white box-shadow-double-large form-control" type="text" name="designation" placeholder="Designation/Title" required />
-                        </div>
+                        
 
                         <!-- Checkbox and Submit Button -->
                        <div class="col-md-12 mb-30px">
                              <label style="display: inline-flex; align-items: center;">
                                 <input type="checkbox" name="terms" required style="transform: scale(2); -webkit-transform: scale(1.5); margin-right: 10px;" />
-                                <span>By submitting this application I hereby declare that all information provided is true and correct to the best of my knowledge and that I have read the terms of ACCT membership.</span>
+                                <span>I Submit that I have completed my membership fee payment.</span>
                             </label>
 
    
@@ -273,7 +187,7 @@
 
                                 <span>
                                     <span><i class="bi bi-calendar-check"></i></span>
-                                    <span class="btn-double-text" data-text="Submit Application">Submit Application</span> 
+                                    <span class="btn-double-text" data-text="Submit Payment">Submit Payment</span> 
                                 </span>
                             </button>
 
@@ -366,17 +280,6 @@
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/vendors.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
-
-<script type="text/javascript">
-  document.getElementById('form').addEventListener('submit', function (event) {
-    var uploader = uploadcare.Widget('[role=uploadcare-uploader]');
-    var file = uploader.value(); // Check if a file is uploaded
-
-    if (!file) {
-      event.preventDefault(); // Stop form submission
-      alert('Please upload a file before submitting.');
-    }
-  });
-</script>
+        
 </body>
 </html>
