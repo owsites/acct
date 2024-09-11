@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>https://acct.org.in/</loc>
+  <lastmod>2024-09-10T19:40:16+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://acct.org.in/index.html</loc>
+  <lastmod>2024-09-10T19:40:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://acct.org.in/about.html</loc>
+  <lastmod>2024-09-10T19:40:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://acct.org.in/education.html</loc>
+  <lastmod>2024-09-10T19:40:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://acct.org.in/membership-criteria.html</loc>
+  <lastmod>2024-09-10T19:40:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://acct.org.in/advocacy.html</loc>
+  <lastmod>2024-09-10T19:40:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://acct.org.in/services.html</loc>
+  <lastmod>2024-09-10T19:40:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- Pages excluded from indexing -->
+<!-- Noindex for ACCT-Executive-Committee.html -->
+<url>
+  <loc>https://acct.org.in/ACCT-Executive-Committee.html</loc>
+  <lastmod>2024-09-10T19:40:16+00:00</lastmod>
+  <priority>0.80</priority>
+  <changefreq>monthly</changefreq>
+  <meta name="robots" content="noindex" />
+</url>
+
+<!-- Noindex for terms.html -->
+<url>
+  <loc>https://acct.org.in/terms.html</loc>
+  <lastmod>2024-09-10T19:40:16+00:00</lastmod>
+  <priority>0.80</priority>
+  <changefreq>monthly</changefreq>
+  <meta name="robots" content="noindex" />
+</url>
+
+<!-- Noindex for privacy.html -->
+<url>
+  <loc>https://acct.org.in/privacy.html</loc>
+  <lastmod>2024-09-10T19:40:16+00:00</lastmod>
+  <priority>0.80</priority>
+  <changefreq>monthly</changefreq>
+  <meta name="robots" content="noindex" />
+</url>
+
+<!-- Noindex for contact.html -->
+<url>
+  <loc>https://acct.org.in/contact.html</loc>
+  <lastmod>2024-09-10T19:40:16+00:00</lastmod>
+  <priority>0.80</priority>
+  <changefreq>monthly</changefreq>
+  <meta name="robots" content="noindex" />
+</url>
+
+<!-- Noindex for membership.html -->
+<url>
+  <loc>https://acct.org.in/membership.html</loc>
+  <lastmod>2024-09-10T19:40:16+00:00</lastmod>
+  <priority>0.64</priority>
+  <meta name="robots" content="noindex" />
+</url>
+
+<!-- Noindex for 404.html -->
+<url>
+  <loc>https://acct.org.in/404.html</loc>
+  <lastmod>2024-09-10T19:40:16+00:00</lastmod>
+  <priority>0.64</priority>
+  <meta name="robots" content="noindex" />
+</url>
+
+<!-- Noindex for acknowledgement.html -->
+<url>
+  <loc>https://acct.org.in/acknowledgement.html</loc>
+  <lastmod>2024-09-10T19:40:16+00:00</lastmod>
+  <priority>0.64</priority>
+  <meta name="robots" content="noindex" />
+</url>
+
+<!-- Noindex for cancellation-and-refund.html -->
+<url>
+  <loc>https://acct.org.in/cancellation-and-refund.html</loc>
+  <lastmod>2024-09-10T19:40:16+00:00</lastmod>
+  <priority>0.64</priority>
+  <meta name="robots" content="noindex" />
+</url>
+
+<!-- Noindex for shipping-and-delivery.html -->
+<url>
+  <loc>https://acct.org.in/shipping-and-delivery.html</loc>
+  <lastmod>2024-09-10T19:40:16+00:00</lastmod>
+  <priority>0.64</priority>
+  <meta name="robots" content="noindex" />
+</url>
+
+</urlset>
