@@ -101,7 +101,7 @@
       <div class="row align-items-center justify-content-center position-relative z-index-1">
     <div class="col-lg-10">
         <!-- ----------------- start contact form ------------------ -->
-        <form id="form" method="post" class="row contact-form-style-02">
+        <form id="form" class="row contact-form-style-02">
             
             <!-- Membership Type -->
             <div class="col-md-12 mb-30px">
@@ -314,26 +314,20 @@ The membership fee supports the ongoing efforts of the Association of Critical C
         <script type="text/javascript" src="js/vendors.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
 
-        <script>
-    // JavaScript to handle form redirection based on membership type
-    document.getElementById('form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
-
+<script>
+    // JavaScript to handle redirection based on membership type
+    document.getElementById('submitButton').addEventListener('click', function() {
         // Get the selected membership type
         var membershipType = document.getElementById('membershipType').value;
 
-        // Check the membership type and set the form action accordingly
+        // Check the membership type and redirect accordingly
         if (membershipType === 'life') {
-            this.action = 'https://acct.org.in/life-membership.html'; // Redirect to life membership page
+            window.location.href = 'life-membership.html'; // Redirect to life membership page
         } else if (membershipType === 'student') {
-            this.action = 'https://acct.org.in/student-membership.html'; // Redirect to student membership page
+            window.location.href = 'student-membership.html'; // Redirect to student membership page
         } else {
             alert('Please select a valid membership type.');
-            return; // Don't submit the form if no valid option is selected
         }
-
-        // Submit the form with the updated action
-        this.submit();
     });
 </script>
 </body>
