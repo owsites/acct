@@ -115,7 +115,7 @@
 
             <!-- Submit Button -->
             <div class="col-xl-6 col-md-5">
-                <button class="btn btn-base-color btn-switch-text btn-medium left-icon btn-round-edge submit" type="submit">
+                <button class="btn btn-base-color btn-switch-text btn-medium left-icon btn-round-edge submit" type="button" id="submitButton">
                     <span>
                         <span class="btn-double-text" data-text="Continue Application">Continue Application</span>
                     </span>
@@ -340,8 +340,8 @@ The membership fee supports the ongoing efforts of the Association of Critical C
 
 <script>
     // JavaScript to handle redirection based on membership type
-    document.getElementById('submitButton').addEventListener('click', function() {
-        // Prevent any form submission
+    document.getElementById('submitButton').addEventListener('click', function(event) {
+        // Prevent the default form submission
         event.preventDefault();
 
         // Get the selected membership type
@@ -350,15 +350,15 @@ The membership fee supports the ongoing efforts of the Association of Critical C
         // Check the membership type and redirect accordingly
         if (membershipType === 'life') {
             window.location.href = 'life-membership.html'; // Redirect to life membership page
+            console.log("Redirecting to life membership page...");
         } else if (membershipType === 'student') {
             window.location.href = 'student-membership.html'; // Redirect to student membership page
+            console.log("Redirecting to student membership page...");
         } else {
             alert('Please select a valid membership type.');
         }
     });
 </script>
-
-
 
         <!-- javascript libraries -->
         <script type="text/javascript" src="js/jquery.js"></script>
