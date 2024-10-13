@@ -317,14 +317,17 @@ The membership fee supports the ongoing efforts of the Association of Critical C
 <script>
     // JavaScript to handle redirection based on membership type
     document.getElementById('submitButton').addEventListener('click', function() {
+        // Prevent any form submission
+        event.preventDefault();
+
         // Get the selected membership type
         var membershipType = document.getElementById('membershipType').value;
 
         // Check the membership type and redirect accordingly
         if (membershipType === 'life') {
-            window.location.href = 'https://acct.org.in/life-membership.html'; // Redirect to life membership page
+            window.location.href = 'life-membership.html'; // Redirect to life membership page
         } else if (membershipType === 'student') {
-            window.location.href = 'https://acct.org.in/student-membership.html'; // Redirect to student membership page
+            window.location.href = 'student-membership.html'; // Redirect to student membership page
         } else {
             alert('Please select a valid membership type.');
         }
